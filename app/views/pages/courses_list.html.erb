@@ -1,0 +1,42 @@
+<div class="topnav">
+    <h1 class="nav-title">List of available courses for Computer Engineering</h1>
+    <div class="links">
+        <a href="home">Home</a>
+        <a class="active" href="courses_list">Courses</a>
+        <a href="about">About</a>
+        <a class="login" href="#">Login</a>
+    </div>
+</div>
+
+<table>
+    <tr>
+        <th>Courses</th>
+        <th class="adjust-width">Actions</th>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>ENGG 3390 - Signal Processing</li>
+                <li>ENGG 3450 - Electronic Devices</li>
+                <li>CIS 2520 - Data Structures</li>
+                <li>ENGG 2100 - Engineering Design II</li>
+                <li>ENGG 3640 - Microcomputer Interfacing</li>
+                <li>ENGG 3380 - Computer Organization & Design</li>
+                <li>CIS 3110 - Operating Systems</li>
+                <li>CIS 3490 - Analysis & Design of Computer Algorithms</li>
+                <li>ENGG 3100 - Engineering Design III</li>
+                <li>ENGG 4550 - VLSI Digital Design</li>
+                <li>ENGG 4000 - Proposal Engineering Design IV</li>
+                <li>ENGG 4420 - Real Time Systems Design</li>
+                <li>ENGG 3050 - Embedded Reconfig Computer System</li>
+                <li>ENGG 4450 - Large Scale Software Architecture</li>
+                <li>ENGG 3240 - Engineering Economics</li>
+                <li>ENGG 4170 - Computer Engineering Design IV</li>
+                <li>ENGG 4540 - Advanced Computer Architecture</li>
+                <li>CIS 2750 - Software Systems Development & Integration</li>
+                <li>CIS 3750 - Systems Analysis & Design in App</li>
+            </ul>
+            <td class="add-crs-btn"><%= button_to 'Add Courses', home_path, method: :get %></td>
+        </td>
+    </tr>
+</table>
