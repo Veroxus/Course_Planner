@@ -1,0 +1,35 @@
+<h1>Add courses to your schedule</h1>
+
+<% courses = ["ENGG 3390", 
+            "ENGG 3450", 
+            "CIS 2520", 
+            "ENGG 2100",
+            "ENGG 3640",
+            "ENGG 3380",
+            "CIS 3110",
+            "CIS 3490",
+            "ENGG 3100",
+            "ENGG 4550",
+            "ENGG 4000",
+            "ENGG 4420",
+            "ENGG 3050",
+            "ENGG 4450",
+            "ENGG 3240",
+            "ENGG 4170",
+            "ENGG 4540",
+            "CIS 2750",
+            "CIS 3750"        
+] %>
+
+<%= form_with scope: :course, url: courses_path, local: true do |f| %>
+    <p>
+        <%= f.select :course, courses, include_blank: true %>
+    </p>
+
+    <p>
+        <%= f.submit %>
+    </p>
+<% end %>
+
+<br>
+<%= button_to "View my courses", courses_list_path, method: :get %>

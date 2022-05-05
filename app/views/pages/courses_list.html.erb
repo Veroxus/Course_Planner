@@ -1,11 +1,9 @@
 <div class="topnav">
     <h1 class="nav-title">List of available courses for Computer Engineering</h1>
-    <div class="links">
-        <a href="home">Home</a>
-        <a class="active" href="courses_list">Courses</a>
-        <a href="about">About</a>
-        <a class="login" href="#">Login</a>
-    </div>
+    <a href="home">Home</a>
+    <a class="active" href="courses_list">Courses</a>
+    <a href="about">About</a>
+    <a class="login" href="#">Login</a>
 </div>
 
 <table>
@@ -36,7 +34,17 @@
                 <li>CIS 2750 - Software Systems Development & Integration</li>
                 <li>CIS 3750 - Systems Analysis & Design in App</li>
             </ul>
-            <td class="add-crs-btn"><%= button_to 'Add Courses', home_path, method: :get %></td>
+            <td class="add-crs-btn"><%= button_to 'Add Courses', courses_add_path, method: :get %></td>
         </td>
     </tr>
 </table>
+
+<div class="botbox">
+    <h1 class="bot-title">My Courses</h1>
+</div>
+
+<p>
+    <% @courses.each do |course| %>
+        <%= course.course %></br>
+    <% end %>
+</p>
