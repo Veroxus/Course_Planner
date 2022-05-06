@@ -15,4 +15,10 @@ class CoursesController < ApplicationController
             redirect_to '/courses_add'
         end
     end
+
+    def show 
+        @course = Course.find(params[:id])
+        @course.destroy
+        redirect_to '/courses_list'
+    end
 end

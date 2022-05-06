@@ -51,7 +51,7 @@
     <% @courses.each do |course| %>
         <tr>
             <td class="course-code"><%= course.course %></td>
-            <td class="del-btn"><%= button_to 'Delete', destroy_course_path(course), method: :delete %></td>
+            <td class="del-btn"><%= button_to 'Delete', course_path(course), method: :get %></td>
         </tr>
     <% end %>
 </table>
