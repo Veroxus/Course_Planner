@@ -43,8 +43,15 @@
     <h1 class="bot-title">My Courses</h1>
 </div>
 
-<p>
+<table>
+    <tr>
+        <th>Course Code</th>
+        <th>Delete</th>
+    </tr>
     <% @courses.each do |course| %>
-        <%= course.course %></br>
+        <tr>
+            <td class="course-code"><%= course.course %></td>
+            <td class="del-btn"><%= button_to 'Delete', destroy_course_path(course), method: :get %></td>
+        </tr>
     <% end %>
-</p>
+</table>

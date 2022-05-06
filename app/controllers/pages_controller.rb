@@ -12,4 +12,10 @@ class PagesController < ApplicationController
     def courses_add
         @course = Course.new
     end
+
+    def destroy
+        @course = Course.find(params[:format])
+        @course.destroy
+        redirect_to '/courses_list'
+    end
 end

@@ -56,8 +56,8 @@
 /* Footer styling on Courses page ------------------------------------------- */
     .bot-title {
         text-align: center;
-        color:rgb(0, 0, 0);
-        background-color: rgb(255, 158, 158);
+        color:rgb(255, 255, 255);
+        background-color: rgb(15, 15, 15);
     }
 /* -------------------------------------------------------------------------- */
 
@@ -87,4 +87,102 @@
     .add-crs-btn {
         text-align: center;
     }
+
+    .course-code {
+        text-align: center;
+    }
+
+    .del-btn {
+        text-align: center;
+    }
 /* -------------------------------------------------------------------------- */
+
+/* Home page styling -------------------------------------------------------- */
+    .banner {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(C:\Users\ajcor\Desktop\Ruby\course_selection\app\assets\images\trees.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+    }
+
+    .content h1 {
+        font-size: 70px;
+    }
+
+    .content li {
+        font-size: 20px;
+        letter-spacing: 0.5px;
+    }
+/* ----------------------------------------------------------------------- */
+
+/* Remove padding and margins for entire website--------------------------- */
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+/* ----------------------------------------------------------------------- */
+
+/* About page styling ---------------------------------------------------- */
+    .about-banner {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(C:\Users\ajcor\Desktop\Ruby\course_selection\app\assets\images\about.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .about-content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+    }
+
+    .about-content h1 {
+        font-size: 75px;
+    }
+
+    .about-content li {
+        font-size: 20px;
+    }
+
+    .personal-links {
+        position: relative;
+        bottom: 0;
+        height: 300px;
+        background-color: rgb(10, 10, 10);
+        padding: 0;
+        margin: 0;
+    }
+
+    .personal-content {
+        color: white;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 3%;
+    }
+
+    .personal-content h1 {
+        font-size: 45px;
+    }
+
+    .personal-content a {
+        color: rgb(158, 180, 255);
+        font-size: 20px;
+        text-decoration: none;
+        line-height: 50px;
+    }
+/* ---------------------------------------------------------------------- */
