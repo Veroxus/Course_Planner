@@ -1,10 +1,10 @@
 class CoursesController < ApplicationController
     def index
-        redirect_to '/courses_list'
+        @courses = Course.all
     end
 
     def new
-        redirect_to '/courses_add'
+        @course = Course.new
     end
 
     def create

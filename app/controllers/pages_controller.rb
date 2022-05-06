@@ -6,10 +6,10 @@ class PagesController < ApplicationController
     end
 
     def courses_list
-        @courses = Course.all
+        redirect_to '/courses'
     end
 
     def courses_add
-        @course = Course.new
+        redirect_to '/courses/new'
     end
 end
